@@ -1,3 +1,5 @@
+Sys.setlocale("LC_TIME", "English")
+#I unzip the file as "project1.txt"
 table <- read.csv(file = "project1.txt",sep = ";",na.strings = "?")
 
 table$Date <- as.Date(table$Date, format = '%d/%m/%Y')
